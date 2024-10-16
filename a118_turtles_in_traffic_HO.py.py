@@ -10,7 +10,7 @@ vert_turtles = []
 # use interesting shapes and colors
 turtle_shapes = ["arrow", "turtle", "classic", "square", "triangle"]
 horiz_colors = ["yellow", "blue", "green", "orange", "purple", "gold"]
-vert_colors = ["darkred", "darkblue", "lime", "salmon", "indigo", "brown"]
+vert_colors = ["darkred", "blue", "lime", "salmon", "indigo", "brown"]
 
 tloc = 50
 for s in turtle_shapes:
@@ -61,7 +61,12 @@ for step in range(50):
                       new_shape = turtle_shapes.pop()
                       ht.shape(new_shape)
                       vt.shape(new_shape)
-                       
+for s in horiz_turtles:
+   s.color("blue")
+   s.fillcolor("blue")
+for s in vert_turtles:
+   s.color("blue")
+   s.fillcolor("blue")
 
                   
 
